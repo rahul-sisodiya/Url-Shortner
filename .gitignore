@@ -1,0 +1,61 @@
+# =========================
+# Environment Variables
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# =========================
+# Build Artifacts
+# =========================
+
+# Frontend (my-app)
+my-app/dist/
+my-app/dist-ssr/
+my-app/.local/
+
+# Backend (shortly)
+shortly/shortly/target/
+*.jar
+*.war
+*.ear
+
+# =========================
+# Dependencies
+# =========================
+
+my-app/node_modules/
+shortly/shortly/.mvn/wrapper/maven-wrapper.jar
+
+# =========================
+# IDE & Editor
+# =========================
+
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs & Temp
+# =========================
+
+*.log
+logs/
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# =========================
+# OS
+# =========================
+
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini

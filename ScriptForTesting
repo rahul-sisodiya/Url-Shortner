@@ -1,0 +1,14 @@
+for ($i = 1; $i -le 1000; $i++) {
+
+    $body = @{
+        url = "https://example.com/page/$i"
+    } | ConvertTo-Json
+
+    $response = Invoke-RestMethod `
+        -Uri "http://localhost:8080/shorten" `
+        -Method POST `
+        -ContentType "application/json" `
+        -Body $body
+
+    Write-Host "$i -> $($response.shortUrl)"
+}
